@@ -23,5 +23,15 @@
         opacity: 0.7; }
       .container .image-gallery .image-container .image {
         display: block; }
+    .container .image-gallery .image-modal {
+      display: none;
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.6); }
+      .container .image-gallery .image-modal.show {
+        display: block; }
 
 /*# sourceMappingURL=styles.css.map */
