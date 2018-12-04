@@ -32,12 +32,16 @@ window.onload = function() {
         const current = imgModal.querySelector(".modal-image");
         if (e.target.classList.contains("left")) {
           if (thumbnailIndex === 0) {
-            thumbnailIndex = srcCache.length;
+            thumbnailIndex = srcCache.length - 1;
           } else {
             thumbnailIndex--;
           }
         } else {
-          console.log("right");
+          if (thumbnailIndex === srcCache.length - 1) {
+            thumbnailIndex = 0;
+          } else {
+            thumbnailIndex++;
+          }
         }
         const thumbnailSrcEnd = srcCache[thumbnailIndex].slice(27);
         current.setAttribute(
