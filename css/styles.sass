@@ -23,7 +23,7 @@
                 opacity: .7
             .image
                 display: block
-        .image-modal
+        .modal-view
             display: none
             position: fixed
             left: 0
@@ -32,7 +32,31 @@
             height: 100vh
             background: rgba(0, 0, 0, .6)
             &.show
+                display: flex
+                justify-content: center
+                align-items: center
+            .modal-image
+                width: 100%
+                max-width: 1200px
+                height: auto
+            .arrow
                 display: block
+                position: absolute
+                top: 50%
+                width: 1rem
+                height: 1rem
+                border: solid white
+                border-width: 0 5px 5px 0
+                opacity: .8
+                cursor: pointer
+                &.left
+                    left: 5%
+                    transform: rotate(135deg)
+                &.right
+                    right: 5%
+                    transform: rotate(-45deg)
+                    
+
             
 
             
