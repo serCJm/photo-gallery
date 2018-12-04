@@ -53,6 +53,7 @@ window.onload = function() {
 
     function viewImage(thumbnailSrc, imgModal) {
       // get the ending of of the thumbnail image src
+      // to use it to set viewed image src
       const thumbnailSrcEnd = thumbnailSrc.slice(27);
       const largeImg = document.createElement("img");
       imgModal.appendChild(largeImg);
