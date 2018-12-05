@@ -49,6 +49,8 @@
         border-width: 0 5px 5px 0;
         opacity: 0.8;
         cursor: pointer; }
+        .container .image-gallery .modal-view .arrow:hover {
+          opacity: 1; }
         .container .image-gallery .modal-view .arrow.left {
           left: 5%;
           transform: rotate(135deg); }
