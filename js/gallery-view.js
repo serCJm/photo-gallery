@@ -63,13 +63,23 @@ window.onload = function() {
       );
       largeImg.setAttribute("alt", "birth-photo-large");
       largeImg.classList.add("modal-image");
+      largeImg.addEventListener("load", portraitView, true);
       imgModal.classList.toggle("show");
     }
 
     function closeImage(imgModal) {
       imgModal.classList.toggle("show");
       const largeImg = imgModal.querySelector(".modal-image");
+      largeImg.removeEventListener("load", portraitView, true);
       imgModal.removeChild(largeImg);
+    }
+
+    function portraitView() {
+      if (this.naturalWidth < this.naturalHeight) {
+        this.classList.add("portrait");
+      } else {
+        this.classList.remove("portrait");
+      }
     }
   })();
 };
