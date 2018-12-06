@@ -39,6 +39,10 @@
         width: 100%;
         max-width: 1200px;
         height: auto; }
+        .container .image-gallery .modal-view .modal-image.portrait {
+          height: 80%;
+          max-height: 1200px;
+          width: auto; }
       .container .image-gallery .modal-view .arrow {
         display: block;
         position: absolute;
